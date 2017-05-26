@@ -17,7 +17,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN set -x \
   && apt-get update -qq \
   && apt-get install -y apt-utils curl \
-  && apt-get install -y fakeroot libxml2 libxml2-utils \
+  && apt-get install -y rpmbuild fakeroot libxml2 libxml2-utils \
   && apt-get install -y --no-install-recommends ca-certificates wget
 
 # create locales
