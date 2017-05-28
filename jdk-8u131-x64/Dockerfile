@@ -57,9 +57,9 @@ RUN apt-get purge -y --auto-remove ca-certificates wget \
 
 # Install Oracle JDK 8u131
 RUN mkdir /srv/java && cd /tmp && \
-    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-i586.tar.gz" && \
-    tar xf jdk-8u131-linux-i586.tar.gz -C /srv/java && \
-    rm -f jdk-8u131-linux-i586.tar.gz && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz" && \
+    tar xf jdk-8u131-linux-x64.tar.gz -C /srv/java && \
+    rm -f jdk-8u131-linux-x64.tar.gz && \
     ln -s /srv/java/jdk* /srv/java/jdk && \
     ln -s /srv/java/jdk /srv/java/jvm
 
