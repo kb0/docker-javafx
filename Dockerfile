@@ -16,7 +16,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # install utilities
 RUN set -x \
   && apt-get update -qq \
-  && apt-get install -y apt-utils curl \
+  && apt-get install -y apt-utils ssh curl \
   && apt-get install -y rpmbuild fakeroot libxml2 libxml2-utils \
   && apt-get install -y --no-install-recommends ca-certificates wget
 

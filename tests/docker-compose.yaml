@@ -1,0 +1,4 @@
+kb00-java-testing:
+  image: kb00/javafx:jdk-8u131-i386
+  stdin_open: true
+  tty: true
