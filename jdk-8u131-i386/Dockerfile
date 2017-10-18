@@ -17,7 +17,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN set -x \
   && apt-get update -qq \
   && apt-get install -y apt-utils ssh curl \
-  && apt-get install -y rpm fakeroot libxml2 libxml2-utils \
+  && apt-get install -y rpm fakeroot libxml2 libxml2-utils libgtk2.0-0 \
   && apt-get install -y --no-install-recommends ca-certificates wget
 
 # create locales
